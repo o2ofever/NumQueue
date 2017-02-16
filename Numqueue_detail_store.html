@@ -3,7 +3,11 @@
 <head>
 <link href="{pigcms:$staticPath}/tpl/static/numqueue/css/css.css" type="text/css" rel="stylesheet"  />
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<<<<<<< HEAD
 <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+=======
+<meta name="viewport" content="width=device-width,height=device-height,inital-scale=1.0,maximum-scale=1.0,user-scalable=no;">
+>>>>>>> 392c46f26eb19ad736aede6a565b411a7a9a4252
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black">
 <meta name="format-detection" content="telephone=no">
@@ -14,7 +18,11 @@
 <body class="body" <if condition="!isset($is_loaded)">onLoad="mapInit()" </if>>
 <div class="content" style="padding:0; width:100%">
   <div class="zhuang_herd">
+<<<<<<< HEAD
     <div class="zhuang_herd_top" style = 'float: left; height: 50px;'>
+=======
+    <div class="zhuang_herd_top">
+>>>>>>> 392c46f26eb19ad736aede6a565b411a7a9a4252
       <div class="zhuang_herd_txt"> 等待類型 </div>
       <div class="zhuang_herd_txt"> 等待数 </div>
       <div class="zhuang_herd_txt"> 預計等待時間</div>
@@ -22,22 +30,35 @@
     </div>
     <ul>
 	<volist name="type_name" id="vo" key="k">
+<<<<<<< HEAD
       <li class="zhuang_li1" style = 'float: left;'>
         <div class="zhuang_herd_txt">
           <div class="zhuang_li_top" style = 'float: left; text-align: center; width: auto; padding-top: 12px; padding-left: 38px;'><php>list($name,$count,$value) = explode("_",$vo);echo $name;</php></div>
 		  <div class="zhuang_li_bottom" style = 'float: left; text-align: center; width: auto; padding-top: 12px; padding-left: 38px; width: auto;'><php>echo $value</php></div>
+=======
+      <li class="zhuang_li1">
+        <div class="zhuang_herd_txt">
+          <div class="zhuang_li_top"><php>list($name,$count,$value) = explode("_",$vo);echo $name;</php></div>
+		  <div class="zhuang_li_bottom"><php>echo $value</php></div>
+>>>>>>> 392c46f26eb19ad736aede6a565b411a7a9a4252
         </div>
         <div class="zhuang_herd_txt">
           <div class="zhuang_0"><php>echo $count;</php><span>位</span></div>
         </div>
         <div class="zhuang_herd_txt">
+<<<<<<< HEAD
           <div class="zhuang_li_top"  style = 'float: left; text-align: center; width: auto; padding-top: 12px; padding-left: 38px;'><php>echo $count*$store_info['wait_time']."&nbsp;"</php></div>
           <div class="zhuang_li_bottom" style = 'float: left; padding-top: 12px; text-align: left; width: auto;'>分钟</div>
+=======
+          <div class="zhuang_li_top"><php>echo $count*$store_info['wait_time']</php></div>
+          <div class="zhuang_li_bottom">分钟</div>
+>>>>>>> 392c46f26eb19ad736aede6a565b411a7a9a4252
         </div>
         <div style="clear:both"></div>
       </li>
 	  </volist>
     </ul>
+<<<<<<< HEAD
     <div class="yuyue" style = "float: left; height: auto;
 			line-height: 20px;
 			padding-top: 20px;
@@ -49,6 +70,9 @@
 			border-bottom: 1px solid #C5C1C1;
 			display: block;
 			border: 2px solid green;">
+=======
+    <div class="yuyue">
+>>>>>>> 392c46f26eb19ad736aede6a565b411a7a9a4252
 	<if condition="$business eq 'close'">
 	<div class="yueyue_img"><img src="{pigcms:$staticPath}/tpl/static/numqueue/images/close.png" width="30"  style=" margin-top: 5px;"/></div>
       <div class="yueyue_txt">
@@ -62,6 +86,7 @@
       <div style="clear:both"></div>
 	<else />
     <div class="yueyue_txt1">
+<<<<<<< HEAD
         <div class="yueyue_title" id="get_location">
 			<!--------- <if condition="!isset($is_loaded)">定位中...<else />{pigcms:$distancestr}</if> ----->
 		</div>
@@ -70,6 +95,13 @@
 			<div>限制距离<span>{pigcms:$store_info['allow_distance']}km</span></div> 
 			<span></span> 
 		</div>
+=======
+        <div class="yueyue_title" id="get_location"><if condition="!isset($is_loaded)">定位中...<else />{pigcms:$distancestr}</if></div>
+        <span>当前距离</span> </div>
+      <div class="yueyue_txt1">
+         <div><span>{pigcms:$store_info['allow_distance']}km</span></div> 
+        <span>限制距离</span> </div>
+>>>>>>> 392c46f26eb19ad736aede6a565b411a7a9a4252
          <button id="btnclick2" class="yueyue_yue">立即领号</button>
 		</if>
     </div>
@@ -79,6 +111,7 @@
  <!--就餐人数弹框-->
 <div class="divShow2"></div>
 <div class="dis2"> 
+<<<<<<< HEAD
 	<div class="ttop2" style="top:20%">
 		<div class="txtspan2">
 			   <div  class="jiucan_tan">
@@ -406,10 +439,80 @@ switch ($_SERVER['REQUEST_METHOD']) {
 			</div>  
 		</div>
 	</div>
+=======
+<div class="ttop2" style="top:20%">
+  <div class="txtspan2">
+   <div  class="jiucan_tan">
+	 <div id="cadiv1" style="bottom:-18px;">  
+	<button style="background:none" onclick="hidediv(2)">
+	 <img src="{pigcms:$staticPath}/tpl/static/numqueue/images/error.png" width="10" /></button>
+	 </div>
+  <div class="content" style="padding:0; width:100%; " >
+  <div class="jiu">
+    <div class="jiu_title"> <span>请输入人数</span></div>
+      <div class="jiu_form">
+         <input class="jiu_input" id="tmp_number" value="" ></div>
+        <div class="jit_bot">
+          <button class="quxiao" onclick="hidediv(2)">取消</button>
+          <button class="queding" onclick="set_number_meals()">确定</button>
+          <div style="clear:both"></div>
+      </div>
+      <div style="clear:both"></div>
+  </div>
+</div>
+   </div>
+ </div >
+</div> 
+</div>  
+<!--选择等待类型弹框-->
+<div class="divShow3"></div>
+<div class="dis3"> 
+<div class="ttop3" style="top:20%">
+  <div class="txtspan3">
+   <div  class="jiucan_tan">
+	 <div id="cadiv1" style="bottom:-25px;left:45%">  
+	  <button  style="background:none" onclick="hidediv(3)">
+		<img src="{pigcms:$staticPath}/tpl/static/numqueue/images/error.png" width="10"/></button>
+	 </div>
+<div class="content" style="padding:0; width:100%">
+  <div class="zhuang_herd">
+    <div class="zhuang_herd_top">
+      <div class="houtai_txt" style="width:30%"> 排号类型 </div>
+      <div class="houtai_txt"> 排队数 </div>
+	   <div class="houtai_txt"> 选择类型 </div>
+      <div style="clear:both"></div>
+    </div>
+    <ul>
+	<foreach name="type_name" item="vo">
+      <li class="zhuang_li1">
+        <div class="houtai_txt">
+          <div class="zhuang_li_top"><php>list($name,$count,$value) = explode("_",$vo);echo $name;</php></div>
+          <div class="zhuang_li_bottom"><php>echo $value;</php></div>
+        </div>
+        <div class="houtai_txt">
+          <div class="zhuang_0"><php>echo $count;</php><span>个</span></div>
+        </div>
+        <div class="houtai_right_txt">
+     <button class="houtai_an" onclick="set_type('{pigcms:$key}')" style="width:100%;">选<php>echo $name;</php></button >
+        <div style="clear:both"></div>
+        </div>
+        <div style="clear:both"></div>
+      </li>
+	  </foreach>
+    </ul>
+      <div style="clear:both"></div>
+  </div>
+ </div >
+</div> 
+</div>  
+</div>
+</div>
+>>>>>>> 392c46f26eb19ad736aede6a565b411a7a9a4252
 <!--手机号弹框-->
 <div class="divShow4"></div>
 <div class="dis4"> 
 <div class="ttop4" style="top:20%">
+<<<<<<< HEAD
 	<div class="txtspan4">
 		<div  class="jiucan_tan">
 			 <div id="cadiv1" style="bottom:-18px;">  
@@ -434,10 +537,37 @@ switch ($_SERVER['REQUEST_METHOD']) {
 				</div>
 		</div >
 	</div> 
+=======
+  <div class="txtspan4">
+   <div  class="jiucan_tan">
+	 <div id="cadiv1" style="bottom:-18px;">  
+	  <button style="background:none" onclick="hidediv(4)">
+	 <img src="{pigcms:$staticPath}/tpl/static/numqueue/images/error.png" width="10"/></button>
+	 </div>
+<div class="content" style="padding:0; width:100%; " >
+  <div class="jiu">
+    <div class="jiu_title"> <span>请输入手机号</span><span> </span></div>
+      <div class="jiu_form">
+         <div><input class="jiu_input" placeholder="手机号" id="temp_phone" value="" /></div>
+         <div>
+           </div>
+        <div class="jit_bot">
+          <button class="quxiao" onclick="hidediv(4)">取消</button>
+          <button class="queding" onclick="get_phone();">确定</button>
+          <div style="clear:both"></div>
+      </div>
+      <div style="clear:both"></div>
+  </div>
+</div>
+   </div>
+ </div >
+</div> 
+>>>>>>> 392c46f26eb19ad736aede6a565b411a7a9a4252
 </div>  
 </div>
 <!--领号成功提示-->
 <div class="divShow5"></div>
+<<<<<<< HEAD
 	<div class="dis5"> 
 		<div class="ttop5" style="top:20%">
 			<div class="txtspan5">
@@ -462,6 +592,32 @@ switch ($_SERVER['REQUEST_METHOD']) {
 			</div> 
 		</div>  
 	</div>
+=======
+<div class="dis5"> 
+<div class="ttop5" style="top:20%">
+  <div class="txtspan5">
+   <div  class="jiucan_tan">
+	 <div id="cadiv1" style="">  
+	 <button style="background:none" onclick="hidediv(5)">
+	 <img src="{pigcms:$staticPath}/tpl/static/numqueue/images/error.png" width="10"/></button>
+	 </div>
+<div class="content" style="padding:0; width:100%; " >
+  <div class="jiu" >
+    <div class="jiu_title">取号成功</div>
+      <div class="chenggong_form" style="text-align: left;">
+        <div>{pigcms:$store_info['name']}提醒您:过号请重新取号谢谢配合。若不能按时到来请及时取消排号。</div>
+      </div>
+      <div class="chenggong_bot" style="margin-right:20%;">
+       <a href="javascript:;"> <div class="queding" style="width:30%;padding-top:4%;" onclick="window.location.href= '{pigcms::U('Numqueue/recevice_detial',array('store_id'=>$store_id,'token'=>$token,'id'=>$id))}';return false">确定</div></a>
+      </div>
+  </div>
+ <div style="clear:both"></div>
+</div>
+ </div >
+</div> 
+</div>  
+</div>
+>>>>>>> 392c46f26eb19ad736aede6a565b411a7a9a4252
 <!--点击ok时提交表单,全部是隐藏表单-->
 <input type="hidden" name="numbers" id="numbers" value="" />
 <input type="hidden" name="queue_type" id="queue_type" value="" />
@@ -476,19 +632,30 @@ $(function(){
 	if(isFuwu != "" && isFuwu == 1){
 		loadurl = '/index.php?g=Wap&m=Numqueue&a=store_info&store_id={pigcms:$store_id}&id={pigcms:$id}&token={pigcms:$token}&action_name={pigcms:$action_name}&rget=1';
 		$.get(loadurl,function(html){
+<<<<<<< HEAD
 			$("#info").html(html).css('border-radius','100px');
 		});
 	}else{
 		loadurl = '/index.php?g=Wap&m=Numqueue&a=store_info&store_id={pigcms:$store_id}&id={pigcms:$id}&token={pigcms:$token}&action_name={pigcms:$action_name}';
 		$("#info").load(loadurl).css('border-radius','100px');
+=======
+			$("#info").html(html);
+		});
+	}else{
+		loadurl = '/index.php?g=Wap&m=Numqueue&a=store_info&store_id={pigcms:$store_id}&id={pigcms:$id}&token={pigcms:$token}&action_name={pigcms:$action_name}';
+		$("#info").load(loadurl);
+>>>>>>> 392c46f26eb19ad736aede6a565b411a7a9a4252
 	}
 });
 $(function(){
 	var h =document.body.scrollHeight;
 	var w = window.innerWidth;
 	var t=document.body.scrollTop;
+<<<<<<< HEAD
 	
 	$('.disPay2Reserve').hide();
+=======
+>>>>>>> 392c46f26eb19ad736aede6a565b411a7a9a4252
 	$("#btnclick2").click(function(){
 		//ajax判断是否在排队中
 		 $.ajax({async: false});
@@ -532,8 +699,13 @@ $(function(){
 var h =document.body.scrollHeight;
 var w = window.innerWidth;
 var t=document.body.scrollTop;
+<<<<<<< HEAD
 function set_number_ofpeople(type){
 	hidediv(2); // alert('297 set number meals entered');
+=======
+function set_number_meals(){
+	hidediv(2);
+>>>>>>> 392c46f26eb19ad736aede6a565b411a7a9a4252
 	var tmp_number = $("#tmp_number").val();
 	var re = /^[1-9]+[0-9]*]*$/;
 	if(!re.test(tmp_number)){
@@ -541,6 +713,7 @@ function set_number_ofpeople(type){
 		return false;
 	}
 	$("#numbers").val(tmp_number);
+<<<<<<< HEAD
 	$('.ttop3').css('height',t).css('border', '5px solid green');
 	$('.divShow3').css('width',w).css('border', '5px solid pink').css('height',h).addClass('show1');
 	$('.ttop3').css('height',t);
@@ -618,6 +791,46 @@ function finishOff(){
 				}
 			}
 	);
+=======
+	$('.ttop3').css('height',t);
+	$('.divShow3').css('width',w).css('height',h).addClass('show1');
+	$('.ttop3').css('height',t);
+	$('.dis3').show();
+}
+//选择等待类型
+function set_type(type){
+	hidediv(3);
+	$("#queue_type").val(type);
+	$('.ttop4').css('height',t);
+	$('.divShow4').css('width',w).css('height',h).addClass('show1');
+	$('.ttop4').css('height',t);
+	$('.dis4').show();
+}
+//填写手机号
+function get_phone(){
+	hidediv(4);
+	var numbers = $("#numbers").val();
+	var queue_type = $("#queue_type").val();
+	var temp_phone = $("#temp_phone").val();
+	var re = /^(1([0-9]){7}|^1([0-9]){10})$/;
+	
+		if(!re.test(temp_phone)){
+		notice('请输入入入有效的手机号');
+		return false;
+	}
+	
+	$("#phone").val(temp_phone);
+	$.post("{pigcms::U('Numqueue/receive_number')}",{'store_id':'{pigcms:$store_id}','token':'{pigcms:$token}','numbers':numbers,'queue_type':queue_type,'phone':temp_phone,'action_id':'{pigcms:$id}'},function(data){
+		if(data == 'done'){
+			$('.ttop5').css('height',t);
+			$('.divShow5').css('width',w).css('height',h).addClass('show1');
+			$('.ttop5').css('height',t);
+			$('.dis5').show();
+		}else{
+			notice('领取失败,请返回重新操作');
+		}
+	});
+>>>>>>> 392c46f26eb19ad736aede6a565b411a7a9a4252
 }
 //隐藏
 function hidediv(id){

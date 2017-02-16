@@ -2,7 +2,11 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<<<<<<< HEAD
 <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+=======
+<meta name="viewport" content="width=device-width,height=device-height,inital-scale=1.0,maximum-scale=1.0,user-scalable=no;">
+>>>>>>> 392c46f26eb19ad736aede6a565b411a7a9a4252
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black">
 <meta name="format-detection" content="telephone=no">
@@ -25,9 +29,13 @@
 </script>
 </head>
 
+<<<<<<< HEAD
 <?php
 // echo $_SERVER['REQUEST_URI']." ".$_SERVER['QUERY_STRING'];
 ?>
+=======
+<?php echo $_SERVER['REQUEST_URI']." ".$_SERVER['QUERY_STRING']; ?>
+>>>>>>> 392c46f26eb19ad736aede6a565b411a7a9a4252
 <body class="body">
 <div class="content">
 <form action="{pigcms::U('Numqueue/store_list',array('id'=>$action_id,'token'=>$token))}" method="POST">
@@ -36,26 +44,43 @@
   <input type="submit" class="tijiao" value="搜&nbsp;&nbsp;索" style="-webkit-appearance: none;"/>
 </form>
 <div class="fu">
+<<<<<<< HEAD
   <div class="fu_txt" style="border-bottom:1px #ccc solid" onclick="window.location.href= '/index.php?g=Wap&m=Numqueue&a=store_list&id={pigcms:$action_id}&token={pigcms:$token}';return false;">
+=======
+  <div class="fu_txt" style="border-bottom:1px #ccc solid" onclick="window.location.href= '/index.php?g=Wap&m=Numqueue&a=store_list&id={pigcms:$action_id}&token={pigcms:$token}';return false">
+>>>>>>> 392c46f26eb19ad736aede6a565b411a7a9a4252
     <div  style=" float:left">附近门店</div>
     <div class="fu_img"><img src="{pigcms:$staticPath}/tpl/static/numqueue/images/jiantou-hui.png" width="20px"  /></div>
     <div style="clear:both"></div>
   </div>
   <if condition="$is_hot eq 1">
+<<<<<<< HEAD
   <div class="fu_txt" style="border-bottom:1px #ccc solid" onclick="window.location.href= '/index.php?g=Wap&m=Numqueue&a=hot_store&id={pigcms:$action_id}&token={pigcms:$token}';return false;">
+=======
+  <div class="fu_txt" style="border-bottom:1px #ccc solid" onclick="window.location.href= '/index.php?g=Wap&m=Numqueue&a=hot_store&id={pigcms:$action_id}&token={pigcms:$token}';return false">
+>>>>>>> 392c46f26eb19ad736aede6a565b411a7a9a4252
     <div  style=" float:left">热卖品牌厅</div>
     <div class="fu_img"><img src="{pigcms:$staticPath}/tpl/static/numqueue/images/jiantou-hui.png" width="20px" /> </div>
 	<div style="clear:both"></div>
   </div>
   </if>
+<<<<<<< HEAD
   <div class="fu_txt" onclick="window.location.href= '/index.php?g=Wap&m=Numqueue&a=number_list&id={pigcms:$action_id}&token={pigcms:$token}';return false;">
+=======
+  <div class="fu_txt" onclick="window.location.href= '/index.php?g=Wap&m=Numqueue&a=number_list&id={pigcms:$action_id}&token={pigcms:$token}';return false">
+>>>>>>> 392c46f26eb19ad736aede6a565b411a7a9a4252
     <div  style=" float:left">我的排号</div>
     <div class="fu_img"><img src="{pigcms:$staticPath}/tpl/static/numqueue/images/jiantou-hui.png" width="20px"  /></div>
     <div style="clear:both"></div>
   </div>
   
+<<<<<<< HEAD
   <div class="fu_txt" onclick="window.location.href= '/index.php?g=Wap&m=Samuel&a=table_number&id={pigcms:$action_id}&token={pigcms:$token}';return false;">
     <div  style=" float:left">我的号</div>
+=======
+  <div class="fu_txt" onclick="window.location.href= '/index.php?g=Wap&m=Samuel&a=table_number&id={pigcms:$action_id}&token={pigcms:$token}';return false">
+    <div  style=" float:left">我tabel号</div>
+>>>>>>> 392c46f26eb19ad736aede6a565b411a7a9a4252
     <div class="fu_img"><img src="{pigcms:$staticPath}/tpl/static/numqueue/images/jiantou-hui.png" width="20px"  /></div>
     <div style="clear:both"></div>
   </div>
@@ -69,7 +94,11 @@
 <div class="content" style="padding-top:0">
 <ul>
 <volist name="store_list" id="vo">
+<<<<<<< HEAD
 <li onclick="window.location.href= '{pigcms::U('Numqueue/detail_store',array('store_id'=>$vo['id'],'id'=>$vo['action_id'],'token'=>$vo['token']))}';return false;">
+=======
+<li onclick="window.location.href= '{pigcms::U('Numqueue/detail_store',array('store_id'=>$vo['id'],'id'=>$vo['action_id'],'token'=>$vo['token']))}';return false">
+>>>>>>> 392c46f26eb19ad736aede6a565b411a7a9a4252
 <div class="data">
 <div class="data_img"><img src="{pigcms:$vo.logo}" /></div>
 <div class="data_arc">
